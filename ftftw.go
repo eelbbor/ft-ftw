@@ -1,7 +1,13 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+	"net/http"
+	"ft-ftw/toggles"
+)
 
 func main() {
-    fmt.Printf("Feature Toggles For The Win!")
+    fmt.Println("Feature Toggles For The Win!")
+	http.HandleFunc("/", http.HandlerFunc(toggles.Handler))
+	http.ListenAndServe(":8080", nil)
 }
