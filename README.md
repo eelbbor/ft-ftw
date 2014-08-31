@@ -5,8 +5,8 @@ This is the base code for a Feature Toggle service.  The goal is to enable a RES
 
 Project structure is built to allow for multiple go projects rather than just the singular directory definition.  You will need to add the following to your environment (as this project evovles I will add more clarity to this):
 
-'''
+```
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/projects/go:$HOME/projects/ft-ftw
 export PATH=$PATH:${GOPATH//://bin:}/bin
-'''
+```
